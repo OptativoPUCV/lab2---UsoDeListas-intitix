@@ -56,3 +56,24 @@ arraylist.h:17:31: note: expected ‘void *’ but argument is of type ‘int’
 cc1: all warnings being treated as errors
 Compilation failed
 771411f
+Thu 21 Mar 2024 11:53:53 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:50:20: error: initialization of ‘int’ from ‘int *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   50 |        int valor = dato;
+      |                    ^~~~
+exercises.c:52:21: error: passing argument 2 of ‘pushFront’ makes pointer from integer without a cast [-Werror=int-conversion]
+   52 |        pushFront(L, valor);
+      |                     ^~~~~
+      |                     |
+      |                     int
+In file included from exercises.c:6,
+                 from test.c:5:
+arraylist.h:17:31: note: expected ‘void *’ but argument is of type ‘int’
+   17 | void pushFront(List *L, void *dato);
+      |                         ~~~~~~^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+1008969
