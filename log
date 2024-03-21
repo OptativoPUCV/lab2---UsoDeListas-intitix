@@ -4,3 +4,14 @@ Thu 21 Mar 2024 11:13:07 PM UTC:
  tests:  0|5
 total_score: 0/70
 cd403b2
+Thu 21 Mar 2024 11:44:51 PM UTC: 
+ exercises.c | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:49:14: error: ‘dato’ is used uninitialized [-Werror=uninitialized]
+   49 |        *dato = i;
+      |        ~~~~~~^~~
+cc1: all warnings being treated as errors
+Compilation failed
+809c7d2

@@ -43,7 +43,13 @@ Al finalizar retorna la lista creada.
 
 List* crea_lista() {
    List* L = create_list();
-    printf("hola");
+   int *dato;
+   for(int i = 1; i <= 10; i++)
+     {
+       *dato = i;
+       pushBack(L, dato);
+     }
+     
    return L;
 }
 
