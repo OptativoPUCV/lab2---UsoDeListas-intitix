@@ -127,7 +127,7 @@ int parentesisBalanceados(char *cadena) {
 
   
   Stack* P = create_stack();
-  void* 
+  void* dato;
   for (int i = 0; i < strlen(cadena); i++)
     {
       void* letraAct = (void*)malloc(sizeof(char));
@@ -146,7 +146,7 @@ int parentesisBalanceados(char *cadena) {
         pop(P);
       
     }
-
+  dato = top(P);
   if (dato != NULL)
     return 0;
   else
