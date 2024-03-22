@@ -148,8 +148,8 @@ int parentesisBalanceados(char *cadena) {
                 
     }  
       
-  dato = top(P);
-  if (dato != NULL)
+  void* daton = top(P);
+  if (daton != NULL)
     return 0;
   else
     return 1;
