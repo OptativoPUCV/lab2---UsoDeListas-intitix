@@ -146,11 +146,15 @@ int parentesisBalanceados(char *cadena) {
           continue;
         else
           return 0;
+        
       }        
                 
       }  
     }
-      
+  if (get_size(P) == 0)
+    return 1;
+  else
+    return 0;    
   dato = top(P);
   if (dato != NULL)
     return 0;
