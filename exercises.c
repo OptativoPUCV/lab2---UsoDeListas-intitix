@@ -124,7 +124,9 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 */
 
 int parentesisBalanceados(char *cadena) {
-  
+  Stack* P = create_stack();
+  int letrasTot = *cadena;
+  printf("%d",letrasTot);
    return 1;
 }
 

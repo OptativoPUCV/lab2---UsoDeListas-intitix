@@ -137,3 +137,14 @@ Fri 22 Mar 2024 12:37:56 AM UTC:
  tests:  5|1
 total_score: 50/70
 7076593
+Fri 22 Mar 2024 12:41:08 AM UTC: 
+ exercises.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:127:10: error: unused variable ‘P’ [-Werror=unused-variable]
+  127 |   Stack* P = create_stack();
+      |          ^
+cc1: all warnings being treated as errors
+Compilation failed
+519b0eb
