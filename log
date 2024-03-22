@@ -323,3 +323,14 @@ Fri 22 Mar 2024 01:52:45 AM UTC:
  tests:  9|0
 total_score: 70/70
 1973a66
+Fri 22 Mar 2024 01:53:30 AM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:150:3: error: ‘letraAct’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+  150 |   free(letraAct);
+      |   ^~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+8491b91
