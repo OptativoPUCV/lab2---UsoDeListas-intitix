@@ -148,3 +148,9 @@ exercises.c:127:10: error: unused variable ‘P’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 519b0eb
+Fri 22 Mar 2024 12:41:15 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  5|1
+total_score: 50/70
+71bc8b1
