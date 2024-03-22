@@ -145,7 +145,7 @@ int parentesisBalanceados(char *cadena) {
         if (dato == '[' && cadena[i] == ']')
           pop(P);
       }        
-      free(letraAct); 
+
     }  
      
   void* daton = top(P);
