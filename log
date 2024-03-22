@@ -241,3 +241,9 @@ exercises.c:130:10: error: unused variable ‘P2’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 fa74346
+Fri 22 Mar 2024 01:32:57 AM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  4|1
+total_score: 50/70
+131c78b
