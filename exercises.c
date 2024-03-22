@@ -133,11 +133,16 @@ int parentesisBalanceados(char *cadena) {
       letraAct = &cadena[i];
       if (cadena[i] == '(')
         push(P, letraAct);
+      else if (cadena[i] == ')')
+        pop(P);
+      
       
     }
+  void* dato = top(P);
+  if (dato != NULL)
+    return 0;
+  else
+    return 1;
     
-      
-
-   return 1;
 }
 
