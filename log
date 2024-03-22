@@ -178,3 +178,29 @@ Fri 22 Mar 2024 12:57:46 AM UTC:
  tests:  7|1
 total_score: 60/70
 0b1414e
+Fri 22 Mar 2024 01:04:45 AM UTC: 
+ exercises.c | 14 +++++++++++---
+ 1 file changed, 11 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:131:3: error: expected identifier or ‘(’ before ‘for’
+  131 |   for (int i = 0; i < strlen(cadena); i++)
+      |   ^~~
+exercises.c:131:19: error: ‘i’ undeclared (first use in this function)
+  131 |   for (int i = 0; i < strlen(cadena); i++)
+      |                   ^
+exercises.c:131:19: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:131:42: error: expected ‘;’ before ‘)’ token
+  131 |   for (int i = 0; i < strlen(cadena); i++)
+      |                                          ^
+      |                                          ;
+exercises.c:131:42: error: expected statement before ‘)’ token
+exercises.c:138:9: error: ‘dato’ undeclared (first use in this function)
+  138 |         dato = top(P);
+      |         ^~~~
+exercises.c:155:1: error: control reaches end of non-void function [-Werror=return-type]
+  155 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+1ef3571
