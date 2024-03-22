@@ -80,6 +80,14 @@ posiciona en el elemento anterior.
 */
 
 void eliminaElementos(List*L, int elem){
+  void* dato = first(L);
+  while(dato != NULL)
+    {
+      int valor = *(int*)dato;
+      if (valor == elem)
+        popCurrent(L);
+      dato = next(L);
+    }
 
 }
 
