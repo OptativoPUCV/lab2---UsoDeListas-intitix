@@ -125,10 +125,19 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 
 int parentesisBalanceados(char *cadena) {
 
-  for (int i = 0; i < *cadena; i++)
+  
+  Stack* P = create_stack();
+  for (int i = 0; i < strlen(cadena); i++)
     {
-      printf("%c", cadena[i]);
+      void* letraAct = (void*)malloc(sizeof(char));
+      letraAct = &cadena[i];
+      if (cadena[i] == '(')
+        push(P, letraAct);
+      
     }
+    
+      
+
    return 1;
 }
 
