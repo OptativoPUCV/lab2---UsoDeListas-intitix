@@ -143,6 +143,8 @@ int parentesisBalanceados(char *cadena) {
           pop(P);
         if (dato == '{' && cadena[i] == '}')
           pop(P);
+        if (dato == '[' && cadena[i] == ']')
+          pop(P);
       }        
                 
     }  
